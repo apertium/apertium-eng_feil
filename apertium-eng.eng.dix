@@ -1,36 +1,582 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <dictionary>
-
-  <!-- Define the alphabet below. -->
   <alphabet>aAáÁăảạÆbBcCčdDÐeEéèễệfFgGhHiIíjJkKlLmMnNoOóöớpPqQrRsSšştTŢuUúüưvVwWxXyYzZ</alphabet>
-
   <sdefs>
-    <!-- Define symbol definitions within <sdef> here. -->
-    <sdef n="n"     c="Noun"/>
-    <sdef n="attr"  c="Attributive"/>
-    <sdef n="sg"    c="Singular"/>
-    <sdef n="pl"    c="Plural"/>
-  </sdefs>
+    <sdef n="n"        c="Noun"/>
+    <sdef n="pr"       c="Preposition"/>
+    <sdef n="np"       c="Proper name"/>
+    <sdef n="vblex"    c="Verb"/>
+    <sdef n="vaux"     c="Auxiliary verb"/>
+    <sdef n="vbmod"    c="Modal verb"/>
+    <sdef n="vbser"    c="Verb 'to be'"/>
+    <sdef n="det"      c="Determiner"/>
+    <sdef n="prn"      c="Pronoun"/>
+    <sdef n="cnjcoo"   c="Coordinating conjunction"/>
+    <sdef n="cnjsub"   c="Subordinating conjunction"/>
 
+    <sdef n="p1"       c="First person"/>
+    <sdef n="p2"       c="Second person"/>
+    <sdef n="p3"       c="Third person"/>
+
+    <sdef n="attr"     c="Attributive"/>
+
+    <sdef n="sg"       c="Singular"/>
+    <sdef n="sp"       c=""/>
+    <sdef n="pl"       c="Plural"/>
+
+    <sdef n="m"        c="Masculine"/>
+    <sdef n="f"        c="Feminine"/>
+    <sdef n="mf"       c="Masculine / feminine"/>
+    <sdef n="nt"       c="Neuter"/>
+
+    <sdef n="def"      c="Definite"/>
+    <sdef n="ind"      c="Indefinite"/>
+    <sdef n="ref"      c="Reflexive"/>
+    <sdef n="dem"      c="Demonstrative"/>
+
+    <sdef n="top"      c="Toponym"/>
+    <sdef n="al"       c="Other"/>
+    <sdef n="ant"      c="Anthroponym"/>
+    <sdef n="cog"      c="Cognomen"/>
+
+    <sdef n="pri"      c="Present indicative"/>
+    <sdef n="prs"      c="Present subjunctive"/>
+    <sdef n="past"     c="Past"/>
+    <sdef n="pis"      c="Past subjunctive"/>
+    <sdef n="imp"      c="Imperative"/>
+    <sdef n="inf"      c="Infinitive"/>
+    <sdef n="pp"       c="Past participle"/>
+
+    <sdef n="subs"     c="Verbal noun"/>
+    <sdef n="pprs"     c="Present participle"/>
+    <sdef n="ger"      c="Gerund"/>
+
+    <sdef n="cm"       c="Comma"/>
+    <sdef n="sent"     c="End of sentence marker"/>
+    <sdef n="quot"     c="Quote mark"/>
+    <sdef n="lquot"    c="Quote mark left"/>
+    <sdef n="rquot"    c="Quote mark right"/>
+  </sdefs>
   <pardefs>
-    <!-- Define paradigms within <pardef> here. -->
+
+    <!-- SECTION: Conjunctions -->
+
+    <pardef n="and__cnjcoo">
+      <e><p><l></l><r><s n="cnjcoo"/></r></p></e>
+    </pardef>
+
+    <pardef n="that__cnjsub">
+      <e><p><l></l><r><s n="cnjsub"/></r></p></e>
+    </pardef>
+
+    <!-- SECTION: Prepositions -->
+
+    <pardef n="from__pr">
+      <e><p><l></l><r><s n="pr"/></r></p></e>
+    </pardef>
+
+    <!-- SECTION: Determiners -->
+
+    <pardef n="the__det">
+      <e><p><l></l><r><s n="det"/><s n="def"/><s n="sp"/></r></p></e>
+    </pardef>
+
+    <pardef n="/a__det">
+      <e r="LR"><p><l>a</l><r>a<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+      <e r="LR"><p><l>an</l><r>a<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+      <e r="RL"><p><l><a/>a</l><r>a<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="th/is__det">
+      <e><p><l>is</l><r>is<s n="det"/><s n="dem"/><s n="sg"/></r></p></e>
+      <e><p><l>ese</l><r>is<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="th/at__det">
+      <e><p><l>at</l><r>at<s n="det"/><s n="dem"/><s n="sg"/></r></p></e>
+      <e><p><l>ose</l><r>at<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
+      <e c="sub"><p><l>em</l><r>at<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <!-- SECTION: Pronouns -->
+
+    <pardef n="myself__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="yourself__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="himself__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="herself__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="themself__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="itself__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="ourselves__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="yourselves__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="themselves__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="th/is__prn">
+      <e><p><l>is</l><r>is<s n="prn"/><s n="dem"/><s n="sg"/></r></p></e>
+      <e><p><l>ese</l><r>is<s n="prn"/><s n="dem"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="th/at__prn">
+      <e><p><l>at</l><r>at<s n="prn"/><s n="dem"/><s n="sg"/></r></p></e>
+      <e><p><l>ose</l><r>at<s n="prn"/><s n="dem"/><s n="pl"/></r></p></e>
+      <e c="sub"><p><l>em</l><r>at<s n="prn"/><s n="dem"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <!-- SECTION: Nouns -->
+
     <pardef n="house__n">
       <e><p><l></l><r><s n="n"/><s n="attr"/></r></p></e>
       <e><p><l></l><r><s n="n"/><s n="sg"/></r></p></e>
       <e><p><l>s</l><r><s n="n"/><s n="pl"/></r></p></e>
     </pardef>
-  </pardefs>
 
+    <pardef n="countr/y__n">
+      <e><p><l>y</l><r>y<s n="n"/><s n="attr"/></r></p></e>
+      <e><p><l>y</l><r>y<s n="n"/><s n="sg"/></r></p></e>
+      <e><p><l>ies</l><r>y<s n="n"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="church__n">
+      <e><p><l></l><r><s n="n"/><s n="attr"/></r></p></e>
+      <e><p><l></l><r><s n="n"/><s n="sg"/></r></p></e>
+      <e><p><l>es</l><r><s n="n"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="chaos__n">
+      <e><p><l></l><r><s n="n"/><s n="attr"/></r></p></e>
+      <e><p><l></l><r><s n="n"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="colo/ur__n">
+      <e><p><l>ur</l><r>ur<s n="n"/><s n="attr"/></r></p></e>
+      <e><p><l>ur</l><r>ur<s n="n"/><s n="sg"/></r></p></e>
+      <e><p><l>urs</l><r>ur<s n="n"/><s n="pl"/></r></p></e>
+      <e alt="en_US"><p><l>r</l><r>ur<s n="n"/><s n="attr"/></r></p></e>
+      <e alt="en_US"><p><l>r</l><r>ur<s n="n"/><s n="sg"/></r></p></e>
+      <e alt="en_US"><p><l>rs</l><r>ur<s n="n"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="organi/sation__n">
+      <e><p><l>sation</l><r>sation<s n="n"/><s n="attr"/></r></p></e>
+      <e><p><l>sation</l><r>sation<s n="n"/><s n="sg"/></r></p></e>
+      <e><p><l>sations</l><r>sation<s n="n"/><s n="pl"/></r></p></e>
+      <e alt="en_US"><p><l>zation</l><r>sation<s n="n"/><s n="attr"/></r></p></e>
+      <e alt="en_US"><p><l>zation</l><r>sation<s n="n"/><s n="sg"/></r></p></e>
+      <e alt="en_US"><p><l>zation</l><r>sation<s n="n"/><s n="pl"/></r></p></e>
+    </pardef>
+
+
+    <!-- SECTION: Proper nouns -->
+
+    <pardef n="Siberia__np">
+      <e><p><l></l><r><s n="np"/><s n="top"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="Soviet_Union__np" c="used with article">
+      <e><p><l></l><r><s n="np"/><s n="top"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="United_States__np" c="used with article">
+      <e><p><l></l><r><s n="np"/><s n="top"/><s n="sp"/></r></p></e>
+    </pardef>
+
+    <pardef n="Eric__np">
+      <e><p><l></l><r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="Daniela__np">
+      <e><p><l></l><r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="Castro__np">
+      <e><p><l></l><r><s n="np"/><s n="cog"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <!-- SECTION: Verbs -->
+
+    <pardef n="S__being/">
+      <e><p><l></l><r><s n="subs"/></r></p></e>
+      <e><p><l></l><r><s n="pprs"/></r></p></e>
+      <e><p><l></l><r><s n="ger"/></r></p></e>
+    </pardef>
+
+    <pardef n="S__accepted/">
+      <e><p><l></l><r><s n="past"/></r></p></e>
+      <e><p><l></l><r><s n="pis"/></r></p></e>
+    </pardef>
+
+    <pardef n="/be__vbser">
+      <e><p><l>be</l><r>be<s n="vbser"/><s n="inf"/></r></p></e>
+      <e><p><l>am</l><r>be<s n="vbser"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
+      <e r="LR"><p><l>art</l><r>be<s n="vbser"/><s n="pri"/><s n="p2"/><s n="sg"/></r></p></e>
+      <e><p><l>are</l><r>be<s n="vbser"/><s n="pri"/></r></p></e>
+      <e><p><l>is</l><r>be<s n="vbser"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+      <e><p><l>be</l><r>be<s n="vbser"/><s n="prs"/></r></p></e>
+      <e><p><l>was</l><r>be<s n="vbser"/><s n="past"/><s n="p1"/><s n="sg"/></r></p></e>
+      <e><p><l>were</l><r>be<s n="vbser"/></r></p><par n="S__accepted/"/></e>
+      <e><p><l>was</l><r>be<s n="vbser"/><s n="past"/><s n="p3"/><s n="sg"/></r></p></e>
+      <e><p><l>being</l><r>be<s n="vbser"/></r></p><par n="S__being/"/></e>
+      <e><p><l>been</l><r>be<s n="vbser"/><s n="pp"/></r></p></e>
+      <e><p><l>be</l><r>be<s n="vbser"/><s n="imp"/></r></p></e>
+    </pardef>
+
+    <pardef n="accept__vblex">
+      <e><p><l></l><r><s n="vblex"/><s n="inf"/></r></p></e>
+      <e><p><l></l><r><s n="vblex"/><s n="pri"/></r></p></e>
+      <e><p><l>s</l><r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+      <e><p><l></l><r><s n="vblex"/><s n="prs"/></r></p></e>
+      <e><p><l>ed</l><r><s n="vblex"/></r></p><par n="S__accepted/"/></e>
+      <e><p><l>ing</l><r><s n="vblex"/></r></p><par n="S__being/"/></e>
+      <e><p><l>ed</l><r><s n="vblex"/><s n="pp"/></r></p></e>
+      <e><p><l></l><r><s n="vblex"/><s n="imp"/></r></p></e>
+    </pardef>
+
+    <pardef n="travel__vblex">
+      <e><p><l></l><r><s n="vblex"/><s n="inf"/></r></p></e>
+      <e><p><l></l><r><s n="vblex"/><s n="pri"/></r></p></e>
+      <e><p><l>s</l><r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+      <e><p><l></l><r><s n="vblex"/><s n="prs"/></r></p></e>
+      <e><p><l>led</l><r><s n="vblex"/></r></p><par n="S__accepted/"/></e>
+      <e><p><l>ling</l><r><s n="vblex"/></r></p><par n="S__being/"/></e>
+      <e><p><l>led</l><r><s n="vblex"/><s n="pp"/></r></p></e>
+      <e alt="en_US"><p><l>ed</l><r><s n="vblex"/></r></p><par n="S__accepted/"/></e>
+      <e alt="en_US"><p><l>ing</l><r><s n="vblex"/></r></p><par n="S__being/"/></e>
+      <e alt="en_US"><p><l>ed</l><r><s n="vblex"/><s n="pp"/></r></p></e>
+      <e><p><l></l><r><s n="vblex"/><s n="imp"/></r></p></e>
+    </pardef>
+
+
+  </pardefs>
   <section id="main" type="standard">
-    <!-- Define entries within <e> here. -->
+    <!-- SECTION: Conjunctions -->
+
+    <e lm="and"><i>and</i><par n="and__cnjcoo"/></e>
+    <e lm="but"><i>but</i><par n="and__cnjcoo"/></e>
+    <e lm="that"><i>that</i><par n="that__cnjsub"/></e>
+
+    <!-- SECTION: Prepositions -->
+
+    <e lm="from"><i>from</i><par n="from__pr"/></e>
+    <e lm="of"><i>of</i><par n="from__pr"/></e>
+    <e lm="to"><i>to</i><par n="from__pr"/></e>
+    <e lm="in"><i>in</i><par n="from__pr"/></e>
+    <e lm="between"><i>between</i><par n="from__pr"/></e>
+    <e lm="by"><i>by</i><par n="from__pr"/></e>
+    <e lm="with"><i>with</i><par n="from__pr"/></e>
+    <e lm="for"><i>for</i><par n="from__pr"/></e>
+    <e lm="at"><i>at</i><par n="from__pr"/></e>
+
+    <e lm="above"><i>above</i><par n="from__pr"/></e>
+    <e lm="according to"><i>according<b/>to</i><par n="from__pr"/></e>
+    <e lm="across"><i>across</i><par n="from__pr"/></e>
+    <e lm="after"><i>after</i><par n="from__pr"/></e>
+    <e lm="against"><i>against</i><par n="from__pr"/></e>
+    <e lm="along"><i>along</i><par n="from__pr"/></e>
+    <e lm="alongside"><i>alongside</i><par n="from__pr"/></e>
+    <e lm="along with"><i>along<b/>with</i><par n="from__pr"/></e>
+    <e lm="amid"><i>amid</i><par n="from__pr"/></e>
+    <e lm="among"><i>among</i><par n="from__pr"/></e>
+    <e lm="amongst"><i>amongst</i><par n="from__pr"/></e>
+    <e lm="around"><i>around</i><par n="from__pr"/></e>
+    <e lm="as"><i>as</i><par n="from__pr"/></e>
+    <e lm="as of"><i>as<b/>of</i><par n="from__pr"/></e>
+    <e lm="at"><i>at</i><par n="from__pr"/></e>
+    <e lm="atop"><i>atop</i><par n="from__pr"/></e>
+    <e lm="because of"><i>because<b/>of</i><par n="from__pr"/></e>
+    <e lm="before"><i>before</i><par n="from__pr"/></e>
+    <e lm="behind"><i>behind</i><par n="from__pr"/></e>
+    <e lm="below"><i>below</i><par n="from__pr"/></e>
+    <e lm="but"><i>but</i><par n="from__pr"/></e>
+    <e lm="by"><i>by</i><par n="from__pr"/></e>
+    <e lm="by means of"><i>by<b/>means<b/>of</i><par n="from__pr"/></e>
+    <e lm="despite"><i>despite</i><par n="from__pr"/></e>
+    <e lm="due to"><i>due<b/>to</i><par n="from__pr"/></e>
+    <e lm="during"><i>during</i><par n="from__pr"/></e>
+    <e lm="except"><i>except</i><par n="from__pr"/></e>
+    <e lm="except for"><i>except<b/>for</i><par n="from__pr"/></e>
+    <e lm="from"><i>from</i><par n="from__pr"/></e>
+    <e lm="in contrast to"><i>in<b/>contrast<b/>to</i><par n="from__pr"/></e>
+    <e lm="in front of"><i>in<b/>front<b/>of</i><par n="from__pr"/></e>
+    <e lm="in order to"><i>in<b/>order<b/>to</i><par n="from__pr"/></e>
+    <e lm="inside"><i>inside</i><par n="from__pr"/></e>
+    <e lm="into"><i>into</i><par n="from__pr"/></e>
+    <e lm="near"><i>near</i><par n="from__pr"/></e>
+    <e lm="off"><i>off</i><par n="from__pr"/></e>
+    <e lm="of"><i>of</i><par n="from__pr"/></e>
+    <e lm="on"><i>on</i><par n="from__pr"/></e>
+    <e lm="out of"><i>out<b/>of</i><par n="from__pr"/></e>
+    <e lm="out"><i>out</i><par n="from__pr"/></e>
+    <e lm="outside"><i>outside</i><par n="from__pr"/></e>
+    <e lm="over"><i>over</i><par n="from__pr"/></e>
+    <e lm="per"><i>per</i><par n="from__pr"/></e>
+    <e lm="prior to"><i>prior<b/>to</i><par n="from__pr"/></e>
+    <e lm="since"><i>since</i><par n="from__pr"/></e>
+    <e lm="throughout"><i>throughout</i><par n="from__pr"/></e>
+    <e lm="through"><i>through</i><par n="from__pr"/></e>
+    <e lm="to"><i>to</i><par n="from__pr"/></e>
+    <e lm="towards"><i>towards</i><par n="from__pr"/></e>
+    <e lm="under"><i>under</i><par n="from__pr"/></e>
+    <e lm="upon"><i>upon</i><par n="from__pr"/></e>
+    <e lm="up to"><i>up<b/>to</i><par n="from__pr"/></e>
+    <e lm="up"><i>up</i><par n="from__pr"/></e>
+    <e lm="via"><i>via</i><par n="from__pr"/></e>
+    <e lm="within"><i>within</i><par n="from__pr"/></e>
+    <e lm="without"><i>without</i><par n="from__pr"/></e>
+    <e lm="with"><i>with</i><par n="from__pr"/></e>
+
+    <!-- SECTION: Determiners -->
+
+    <e lm="the"><i>the</i><par n="the__det"/></e>
+    <e lm="a"><i></i><par n="/a__det"/></e>
+    <e lm="this"><i>th</i><par n="th/is__det"/></e>
+    <e lm="that"><i>th</i><par n="th/at__det"/></e>
+
+    <!-- SECTION: Pronouns -->
+
+    <e lm="this"><i>th</i><par n="th/is__prn"/></e>
+    <e lm="that"><i>th</i><par n="th/at__prn"/></e>
+
+    <e lm="myself"><i>myself</i><par n="myself__prn"/></e>
+    <e lm="oneself"><i>oneself</i><par n="myself__prn"/></e>
+    <e lm="one's self" c="use/dat"><p><l>one's<b/>self</l><r>oneself</r></p><par n="myself__prn"/></e>
+
+    <e lm="thyself" c="use/arc"><i>thyself</i><par n="yourself__prn"/></e>
+    <e lm="yourself"><i>yourself</i><par n="yourself__prn"/></e>
+
+    <e lm="himself"><i>himself</i><par n="himself__prn"/></e>
+    <e lm="hisself" c="use/sub"><p><l>hisself</l><r>himself</r></p><par n="himself__prn"/></e>
+
+    <e lm="herself"><i>herself</i><par n="herself__prn"/></e>
+
+    <e lm="themself"><i>themself</i><par n="themself__prn"/></e>
+    <e lm="themselves"><i>themselves</i><par n="themself__prn"/></e>
+
+    <e lm="oneself"><i>oneself</i><par n="themself__prn"/></e>
+    <e lm="one's self" c="use/dat"><p><l>one's<b/>self</l><r>oneself</r></p><par n="themself__prn"/></e>
+
+
+    <e lm="itself"><i>itself</i><par n="itself__prn"/></e>
+
+    <e lm="ourselves"><i>ourselves</i><par n="ourselves__prn"/></e>
+    <e lm="ourself" c="use/sub"><p><l>ourself</l><r>ourselves</r></p><par n="ourselves__prn"/></e>
+
+    <e lm="yourselves"><i>yourselves</i><par n="yourselves__prn"/></e>
+
+    <e lm="themselves"><i>themselves</i><par n="themselves__prn"/></e>
+    <e lm="theirselves" c="use/sub"><p><l>theirselves</l><r>themselves</r></p><par n="themselves__prn"/></e>
+
+    <!-- SECTION: Nouns -->
+
     <e lm="house"><i>house</i><par n="house__n"/></e>
+    <e lm="province"><i>province</i><par n="house__n"/></e>
+    <e lm="government"><i>government</i><par n="house__n"/></e>
+    <e lm="field"><i>field</i><par n="house__n"/></e>
+    <e lm="battlefield"><i>battlefield</i><par n="house__n"/></e>
+    <e lm="being"><i>being</i><par n="house__n"/></e>
+    <e lm="river"><i>river</i><par n="house__n"/></e>
+    <e lm="empire"><i>empire</i><par n="house__n"/></e>
+    <e lm="region"><i>region</i><par n="house__n"/></e>
+    <e lm="war"><i>war</i><par n="house__n"/></e>
+    <e lm="year"><i>year</i><par n="house__n"/></e>
+    <e lm="district"><i>district</i><par n="house__n"/></e>
+    <e lm="delta"><i>delta</i><par n="house__n"/></e>
+    <e lm="horde"><i>horde</i><par n="house__n"/></e>
+    <e lm="district"><i>district</i><par n="house__n"/></e>
+    <e lm="access"><i>access</i><par n="house__n"/></e>
+    <e lm="part"><i>part</i><par n="house__n"/></e>
+    <e lm="revolution"><i>revolution</i><par n="house__n"/></e>
+    <e lm="council"><i>council</i><par n="house__n"/></e>
+    <e lm="railway"><i>railway</i><par n="house__n"/></e>
+    <e lm="takeover"><i>takeover</i><par n="house__n"/></e>
+    <e lm="saboteur"><i>saboteur</i><par n="house__n"/></e>
+    <e lm="communist"><i>communist</i><par n="house__n"/></e>
+    <e lm="ghetto"><i>ghetto</i><par n="house__n"/></e>
+    <e lm="solution"><i>solution</i><par n="house__n"/></e>
+    <e lm="camp"><i>camp</i><par n="house__n"/></e>
+    <e lm="state"><i>state</i><par n="house__n"/></e>
+    <e lm="system"><i>system</i><par n="house__n"/></e>
+    <e lm="invasion"><i>invasion</i><par n="house__n"/></e>
+    <e lm="member"><i>member</i><par n="house__n"/></e>
+    <e lm="front"><i>front</i><par n="house__n"/></e>
+    <e lm="summer"><i>summer</i><par n="house__n"/></e>
+    <e lm="offensive"><i>offensive</i><par n="house__n"/></e>
+    <e lm="operation"><i>operation</i><par n="house__n"/></e>
+    <e lm="land"><i>land</i><par n="house__n"/></e>
+    <e lm="leader"><i>leader</i><par n="house__n"/></e>
+    <e lm="border"><i>border</i><par n="house__n"/></e>
+    <e lm="alliance"><i>alliance</i><par n="house__n"/></e>
+    <e lm="refrigerant"><i>refrigerant</i><par n="house__n"/></e>
+    <e lm="speed"><i>speed</i><par n="house__n"/></e>
+    <e lm="king"><i>king</i><par n="house__n"/></e>
+    <e lm="power"><i>power</i><par n="house__n"/></e>
+    <e lm="circuit"><i>circuit</i><par n="house__n"/></e>
+    <e lm="plasma"><i>plasma</i><par n="house__n"/></e>
+    <e lm="population"><i>population</i><par n="house__n"/></e>
+    <e lm="control"><i>control</i><par n="house__n"/></e>
+
+    <e lm="oblast"><i>oblast</i><par n="house__n"/></e>
+    <e lm="use"><i>use</i><par n="house__n"/></e>
+    <e lm="peninsula"><i>peninsula</i><par n="house__n"/></e>
+    <e lm="sea"><i>sea</i><par n="house__n"/></e>
+
+    <e lm="church"><i>church</i><par n="church__n"/></e>
+    <e lm="march"><i>march</i><par n="church__n"/></e>
+    <e lm="fortress"><i>fortress</i><par n="church__n"/></e>
+
+    <e lm="country"><i>countr</i><par n="countr/y__n"/></e>
+    <e lm="monastery"><i>monaster</i><par n="countr/y__n"/></e>
+    <e lm="army"><i>arm</i><par n="countr/y__n"/></e>
+    <e lm="treaty"><i>treat</i><par n="countr/y__n"/></e>
+    <e lm="century"><i>centur</i><par n="countr/y__n"/></e>
+    <e lm="military"><i>militar</i><par n="countr/y__n"/></e>
+    <e lm="territory"><i>territor</i><par n="countr/y__n"/></e>
+    <e lm="principality"><i>principalit</i><par n="countr/y__n"/></e>
+    <e lm="energy"><i>energ</i><par n="countr/y__n"/></e>
+
+    <e lm="chaos"><i>chaos</i><par n="chaos__n"/></e>
+    <e lm="peace"><i>peace</i><par n="chaos__n"/></e>
+    <e lm="independence"><i>independence</i><par n="chaos__n"/></e>
+
+    <!-- SECTION: Proper nouns -->
+
+    <e lm="Siberia"><i>Siberia</i><par n="Siberia__np"/></e>
+    <e lm="Colombia"><i>Colombia</i><par n="Siberia__np"/></e>
+    <e lm="Stalingrad"><i>Stalingrad</i><par n="Siberia__np"/></e>
+    <e lm="Leningrad"><i>Leningrad</i><par n="Siberia__np"/></e>
+    <e lm="Bessarabia"><i>Bessarabia</i><par n="Siberia__np"/></e>
+    <e lm="Russia"><i>Russia</i><par n="Siberia__np"/></e>
+    <e lm="Morocco"><i>Morocco</i><par n="Siberia__np"/></e>
+    <e lm="Belize"><i>Belize</i><par n="Siberia__np"/></e>
+    <e lm="Geneva"><i>Geneva</i><par n="Siberia__np"/></e>
+    <e lm="Derbent"><i>Derbent</i><par n="Siberia__np"/></e>
+    <e lm="Guatemala"><i>Guatemala</i><par n="Siberia__np"/></e>
+    <e lm="Soviet Union"><i>Soviet<b/>Union</i><par n="Soviet_Union__np"/></e>
+    <e lm="United States"><i>United<b/>States</i><par n="United_States__np"/></e>
+
+    <e lm="Aaron"><i>Aaron</i><par n="Eric__np"/></e>
+    <e lm="Ahmed"><i>Ahmed</i><par n="Eric__np"/></e>
+    <e lm="Alan"><i>Alan</i><par n="Eric__np"/></e>
+    <e lm="Alejandro"><i>Alejandro</i><par n="Eric__np"/></e>
+    <e lm="Alexander"><i>Alexander</i><par n="Eric__np"/></e>
+    <e lm="Alfred"><i>Alfred</i><par n="Eric__np"/></e>
+    <e lm="Álvaro"><i>Álvaro</i><par n="Eric__np"/></e>
+    <e lm="Aristotle"><i>Aristotle</i><par n="Eric__np"/></e>
+    <e lm="Arnold"><i>Arnold</i><par n="Eric__np"/></e>
+    <e lm="Augustin"><i>Augustin</i><par n="Eric__np"/></e>
+    <e lm="Ben"><i>Ben</i><par n="Eric__np"/></e>
+    <e lm="Christian"><i>Christian</i><par n="Eric__np"/></e>
+    <e lm="Christopher"><i>Christopher</i><par n="Eric__np"/></e>
+    <e lm="Cicero"><i>Cicero</i><par n="Eric__np"/></e>
+    <e lm="Colin"><i>Colin</i><par n="Eric__np"/></e>
+    <e lm="David"><i>David</i><par n="Eric__np"/></e>
+    <e lm="Diego"><i>Diego</i><par n="Eric__np"/></e>
+    <e lm="Erik"><i>Erik</i><par n="Eric__np"/></e>
+    <e lm="Ernst"><i>Ernst</i><par n="Eric__np"/></e>
+    <e lm="Francisco"><i>Francisco</i><par n="Eric__np"/></e>
+    <e lm="Gabriel"><i>Gabriel</i><par n="Eric__np"/></e>
+    <e lm="Geoffrey"><i>Geoffrey</i><par n="Eric__np"/></e>
+    <e lm="George"><i>George</i><par n="Eric__np"/></e>
+    <e lm="Georg"><i>Georg</i><par n="Eric__np"/></e>
+    <e lm="German"><i>German</i><par n="Eric__np"/></e>
+    <e lm="Gil"><i>Gil</i><par n="Eric__np"/></e>
+    <e lm="Gonzalo"><i>Gonzalo</i><par n="Eric__np"/></e>
+    <e lm="Gustavo"><i>Gustavo</i><par n="Eric__np"/></e>
+    <e lm="Guzmán"><i>Guzmán</i><par n="Eric__np"/></e>
+    <e lm="Hamid"><i>Hamid</i><par n="Eric__np"/></e>
+    <e lm="Hassan"><i>Hassan</i><par n="Eric__np"/></e>
+    <e lm="Hector"><i>Hector</i><par n="Eric__np"/></e>
+    <e lm="Hèctor"><i>Hèctor</i><par n="Eric__np"/></e>
+    <e lm="Herodotus"><i>Herodotus</i><par n="Eric__np"/></e>
+    <e lm="Ian"><i>Ian</i><par n="Eric__np"/></e>
+    <e lm="Igor"><i>Igor</i><par n="Eric__np"/></e>
+    <e lm="Isaac"><i>Isaac</i><par n="Eric__np"/></e>
+    <e lm="Jack"><i>Jack</i><par n="Eric__np"/></e>
+    <e lm="Johann"><i>Johann</i><par n="Eric__np"/></e>
+    <e lm="Johnny"><i>Johnny</i><par n="Eric__np"/></e>
+    <e lm="Jorge"><i>Jorge</i><par n="Eric__np"/></e>
+    <e lm="Jose"><i>Jose</i><par n="Eric__np"/></e>
+    <e lm="Jose Mari"><i>Jose Mari</i><par n="Eric__np"/></e>
+    <e lm="Joseph"><i>Joseph</i><par n="Eric__np"/></e>
+    <e lm="Juan"><i>Juan</i><par n="Eric__np"/></e>
+    <e lm="Julius"><i>Julius</i><par n="Eric__np"/></e>
+    <e lm="Keith"><i>Keith</i><par n="Eric__np"/></e>
+    <e lm="Kevin"><i>Kevin</i><par n="Eric__np"/></e>
+    <e lm="Laureano"><i>Laureano</i><par n="Eric__np"/></e>
+    <e lm="Leo"><i>Leo</i><par n="Eric__np"/></e>
+    <e lm="Luis"><i>Luis</i><par n="Eric__np"/></e>
+    <e lm="Lluís"><i>Lluís</i><par n="Eric__np"/></e>
+    <e lm="Manuel"><i>Manuel</i><par n="Eric__np"/></e>
+    <e lm="Marcus"><i>Marcus</i><par n="Eric__np"/></e>
+    <e lm="Mephistopheles"><i>Mephistopheles</i><par n="Eric__np"/></e>
+    <e lm="Michael"><i>Michael</i><par n="Eric__np"/></e>
+    <e lm="Mikel"><i>Mikel</i><par n="Eric__np"/></e>
+    <e lm="Mikhail"><i>Mikhail</i><par n="Eric__np"/></e>
+    <e lm="Muhammad"><i>Muhammad</i><par n="Eric__np"/></e>
+    <e lm="Nestor"><i>Nestor</i><par n="Eric__np"/></e>
+    <e lm="Omar"><i>Omar</i><par n="Eric__np"/></e>
+    <e lm="Paul"><i>Paul</i><par n="Eric__np"/></e>
+    <e lm="Peter"><i>Peter</i><par n="Eric__np"/></e>
+    <e lm="Plato"><i>Plato</i><par n="Eric__np"/></e>
+    <e lm="Raul"><i>Raul</i><par n="Eric__np"/></e>
+    <e lm="Richard"><i>Richard</i><par n="Eric__np"/></e>
+    <e lm="Robert"><i>Robert</i><par n="Eric__np"/></e>
+    <e lm="Sebastian"><i>Sebastian</i><par n="Eric__np"/></e>
+    <e lm="Sebastián"><i>Sebastián</i><par n="Eric__np"/></e>
+    <e lm="Stephen"><i>Stephen</i><par n="Eric__np"/></e>
+    <e lm="Steven"><i>Steven</i><par n="Eric__np"/></e>
+    <e lm="Tito"><i>Tito</i><par n="Eric__np"/></e>
+    <e lm="Valentín"><i>Valentín</i><par n="Eric__np"/></e>
+    <e lm="Victor"><i>Victor</i><par n="Eric__np"/></e>
+    <e lm="Víctor"><i>Víctor</i><par n="Eric__np"/></e>
+    <e lm="Vladimiro"><i>Vladimiro</i><par n="Eric__np"/></e>
+    <e lm="Vladimir"><i>Vladimir</i><par n="Eric__np"/></e>
+    <e lm="Wolfgang"><i>Wolfgang</i><par n="Eric__np"/></e>
+    <e lm="Zachariah"><i>Zachariah</i><par n="Eric__np"/></e>
+
+    <e lm="Angelica"><i>Angelica</i><par n="Daniela__np"/></e>
+    <e lm="Anne"><i>Anne</i><par n="Daniela__np"/></e>
+    <e lm="Bella"><i>Bella</i><par n="Daniela__np"/></e>
+    <e lm="Gretchen"><i>Gretchen</i><par n="Daniela__np"/></e>
+    <e lm="Helen"><i>Helen</i><par n="Daniela__np"/></e>
+    <e lm="Irene"><i>Irene</i><par n="Daniela__np"/></e>
+    <e lm="Itziar"><i>Itziar</i><par n="Daniela__np"/></e>
+    <e lm="Kara"><i>Kara</i><par n="Daniela__np"/></e>
+    <e lm="Kristina"><i>Kristina</i><par n="Daniela__np"/></e>
+    <e lm="Leticia"><i>Leticia</i><par n="Daniela__np"/></e>
+
+    <e lm="Montesinos"><i>Montesinos</i><par n="Castro__np"/></e>
+
+    <!-- SECTION: Verbs -->
+
+    <e lm="be"><i></i><par n="/be__vbser"/></e>
+
+    <e lm="accept"><i>accept</i><par n="accept__vblex"/></e>
+    <e lm="travel"><i>travel</i><par n="travel__vblex"/></e>
+
   </section>
 
 </dictionary>
-
-<!-- 
-Resources: 
-    http://wiki.apertium.org/wiki/Monodix_basics
-    http://wiki.apertium.org/wiki/Apertium_New_Language_Pair_HOWTO#Monolingual_dictionaries
--->
-
