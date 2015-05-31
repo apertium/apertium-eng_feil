@@ -40,6 +40,7 @@
     <sdef n="top" 	c="Toponym"/> 
     <sdef n="al" 	c="Other"/> 
     <sdef n="ant" 	c="Anthroponym"/> 
+    <sdef n="org" 	c="Organisation"/> 
     <sdef n="cog" 	c="Cognomen"/> 
     <sdef n="pri" 	c="Present indicative"/> 
     <sdef n="prs" 	c="Present subjunctive"/> 
@@ -89,6 +90,7 @@
     <sdef n="ij" /> 
     <sdef n="lpar" /> 
     <sdef n="rpar" /> 
+    <sdef n="lquest" /> 
     <sdef n="web" /> 
     <sdef n="apos" /> 
     <sdef n="percent" /> 
@@ -281,10 +283,10 @@
 
 <pardef n="/be__vbser">
   <e>       <p><l>be</l>        <r>be<s n="vbser"/><s n="inf"/></r></p></e>
-  <e>       <p><l>am</l>        <r>be<s n="vbser"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
-  <e r="LR"><p><l>art</l>       <r>be<s n="vbser"/><s n="pri"/><s n="p2"/><s n="sg"/></r></p></e>
-  <e>       <p><l>are</l>       <r>be<s n="vbser"/><s n="pri"/></r></p></e>
-  <e>       <p><l>is</l>        <r>be<s n="vbser"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>am</l>        <r>be<s n="vbser"/><s n="pres"/><s n="p1"/><s n="sg"/></r></p></e>
+  <e r="LR"><p><l>art</l>       <r>be<s n="vbser"/><s n="pres"/><s n="p2"/><s n="sg"/></r></p></e>
+  <e>       <p><l>are</l>       <r>be<s n="vbser"/><s n="pres"/></r></p></e>
+  <e>       <p><l>is</l>        <r>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>be</l>        <r>be<s n="vbser"/><s n="prs"/></r></p></e>
   <e>       <p><l>was</l>       <r>be<s n="vbser"/><s n="past"/><s n="p1"/><s n="sg"/></r></p></e>
   <e>       <p><l>were</l>      <r>be<s n="vbser"/></r></p><par n="S__accepted/"/></e>
@@ -296,8 +298,8 @@
 
 <pardef n="accept__vblex">
   <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pri"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="prs"/></r></p></e>
   <e>       <p><l>ed</l>        <r><s n="vblex"/></r></p><par n="S__accepted/"/></e>
   <e>       <p><l>ing</l>       <r><s n="vblex"/></r></p><par n="S__being/"/></e>
@@ -307,8 +309,8 @@
 
 <pardef n="travel__vblex">
   <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pri"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="prs"/></r></p></e>
   <e>       <p><l>led</l>       <r><s n="vblex"/></r></p><par n="S__accepted/"/></e>
   <e>       <p><l>ling</l>      <r><s n="vblex"/></r></p><par n="S__being/"/></e>
@@ -360,13 +362,7 @@
 
 
 
-<pardef n="guionet">
-  <e>       <p><l>-</l>         <r>-<s n="guio"/></r></p></e>
-</pardef>
 
-<pardef n="coma">
-  <e>       <p><l>,</l>         <r>,<s n="cm"/></r></p></e>
-</pardef>
 
 <pardef n="aposchar">
   <e>       <i>'</i></e>
@@ -393,10 +389,6 @@
 
 
 
-<pardef n="numeros">
-  <e>       <re>[0-9]+([.,][0-9]+)?</re><p><l></l><r><s n="num"/></r></p></e>
-  <e>       <re>[0-9]+([.,][0-9]+)?%</re><p><l></l><r><s n="num"/><s n="percent"/></r></p></e>
-</pardef>
 
     <!-- Years -->
 <pardef n="years">
@@ -430,18 +422,6 @@
   <e>       <re>(St|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr|Don).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p></e>
 </pardef>
 
-
-<pardef n="separa">
-  <e>       <re>[.\?;:!]</re><p><l></l><r><s n="sent"/></r></p></e>
-</pardef>
-
-<pardef n="emails">
-  <e>       <re>[a-z.]+@[a-z.]+</re><p><l></l><r><s n="num"/></r></p></e>
-</pardef>
-
-<pardef n="urls">
-  <e>       <re>(((www.)|(http://))[áéíóúàèìòùäëïöüñça-z0-9\-]+([.][áéíóúàèìòùäëïöüñça-z]+)+(/[áéíóúàèìòùäëïöüñça-z0-9_]+)*([.][áéíóúàèìòùäëïöüñça-z]+)*)</re><p><l></l><r><s n="num"/></r></p></e>
-</pardef>
 
 <pardef n="expensive__adj">
   <e>       <p><l></l>          <r><s n="adj"/></r></p></e>
@@ -2664,7 +2644,129 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
-  </pardefs>
+
+<pardef n="separa">
+  <e r="RL"><p><l><a/></l><r/></p><re>[.\?;:!]+</re>      <p>        <l></l>        <r><s n="sent"/></r></p></e>
+  <e r="LR"><re>[.\?;:!]+</re>      <p>        <l></l>        <r><s n="sent"/></r></p></e>
+</pardef>
+<pardef n="separ">
+  <e>      <re>[¿¡]</re>      <p>        <l></l>        <r><s n="lquest"/></r></p></e>
+</pardef>
+<pardef n="numeros">
+  <e r="RL"><re>[0-9]+([., ][0-9]+)?%?</re><p><l></l><r><s n="num"/></r></p></e>
+  <e>       <re>[0-9]+([.,][0-9]+)?%?</re><p><l></l><r><s n="num"/></r></p></e>
+  <!--
+      <e><re>[0-9][0-9]</re><p><l>/</l><r>\/</r></p><re>[0-9][0-9]</re><p><l>/</l><r>\/</r></p><re>[0-9][0-9][0-9][0-9]</re><p><l/><r><s n="num"/></r></p></e>
+  -->
+  <e>       <re>[0-9]+([.,][0-9]+)?</re><i>-</i><re>[0-9]+([.,][0-9]+)?%?</re><p><l></l><r><s n="num"/></r></p></e>
+  <e>       <re>[0-9]+([0-9]+)?</re><p><l>°C</l><r>°C<s n="num"/></r></p></e>
+  <e>       <i>-</i><re>[0-9]+([0-9]+)?</re><p><l>°C</l><r>°C<s n="num"/></r></p></e>
+  <e>       <re>[0-9]+([.,][0-9]+)?</re>      <p>        <l><b/>o'clock</l>        <r><b/>o'clock<s n="num"/></r></p></e>
+  <e>       <re>[0-9]+([.,][0-9]+)?[:.][0-9]+([.,][0-9]+)?</re><p><l></l><r><s n="num"/></r></p></e>
+  <e r="RL"><re>[0-9]+</re><p><l><b/><a/>BCE</l><r><b/>BCE<s n="num"/></r></p></e>
+  <e r="LR"><re>[0-9]+</re><p><l><b/>BCE</l><r><b/>BCE<s n="num"/></r></p></e>
+  <e r="RL"><re>[0-9]+</re><p><l><b/><a/>CE</l><r><b/>CE<s n="num"/><s n="sg"/></r></p></e>
+  <e r="LR"><re>[0-9]+</re><p><l><b/>CE</l><r><b/>CE<s n="num"/><s n="sg"/></r></p></e>
+
+  <e r="RL"><re>[0-9]*[7,8]</re><p><l>th</l><r><s n="num"/><s n="ord"/><s n="sg"/></r></p></e>
+  <e r="RL"><re>[0-9]*[7,8]</re><p><l>th</l><r><s n="num"/><s n="ord"/><s n="pl"/></r></p></e>
+  <e r="LR"><re>[0-9]*[7,8]</re><p><l>th</l><r><s n="num"/><s n="ord"/></r></p></e>
+
+  <e r="RL"><re>([0-9]*[0,2-9])?[1]</re><p><l>st</l><r><s n="num"/><s n="ord"/><s n="sg"/></r></p></e>
+  <e r="RL"><re>([0-9]*[0,2-9])?[1]</re><p><l>st</l><r><s n="num"/><s n="ord"/><s n="pl"/></r></p></e>
+  <e r="LR"><re>([0-9]*[0,2-9])?[1]</re><p><l>st</l><r><s n="num"/><s n="ord"/></r></p></e>
+
+  <e r="RL"><re>([0-9]*[0,2-9])?[2]</re><p><l>nd</l><r><s n="num"/><s n="ord"/><s n="sg"/></r></p></e>
+  <e r="RL"><re>([0-9]*[0,2-9])?[2]</re><p><l>nd</l><r><s n="num"/><s n="ord"/><s n="pl"/></r></p></e>
+  <e r="LR"><re>([0-9]*[0,2-9])?[2]</re><p><l>nd</l><r><s n="num"/><s n="ord"/></r></p></e>
+
+  <e r="RL"><re>([0-9]*[0,2-9])?[3]</re><p><l>rd</l><r><s n="num"/><s n="ord"/><s n="sg"/></r></p></e>
+  <e r="RL"><re>([0-9]*[0,2-9])?[3]</re><p><l>rd</l><r><s n="num"/><s n="ord"/><s n="pl"/></r></p></e>
+  <e r="LR"><re>([0-9]*[0,2-9])?[3]</re><p><l>rd</l><r><s n="num"/><s n="ord"/></r></p></e>
+
+  <e r="RL"><re>[0,4,5,6,9]</re><p><l>th</l><r><s n="num"/><s n="ord"/><s n="sg"/></r></p></e>
+  <e r="RL"><re>[0,4,5,6,9]</re><p><l>th</l><r><s n="num"/><s n="ord"/><s n="pl"/></r></p></e>
+  <e r="LR"><re>[0,4,5,6,9]</re><p><l>th</l><r><s n="num"/><s n="ord"/></r></p></e>
+
+  <e r="RL"><re>[0-9]*1[0-9]</re><p><l>th</l><r><s n="num"/><s n="ord"/><s n="sg"/></r></p></e>
+  <e r="RL"><re>[0-9]*1[0-9]</re><p><l>th</l><r><s n="num"/><s n="ord"/><s n="pl"/></r></p></e>
+  <e r="LR"><re>[0-9]*1[0-9]</re><p><l>th</l><r><s n="num"/><s n="ord"/></r></p></e>
+
+  <e r="RL"><re>[0-9]*[0,2-9][0,4,5,6,9]</re><p><l>th</l><r><s n="num"/><s n="ord"/><s n="sg"/></r></p></e>
+  <e r="RL"><re>[0-9]*[0,2-9][0,4,5,6,9]</re><p><l>th</l><r><s n="num"/><s n="ord"/><s n="pl"/></r></p></e>
+  <e r="LR"><re>[0-9]*[0,2-9][0,4,5,6,9]</re><p><l>th</l><r><s n="num"/><s n="ord"/></r></p></e>
+
+  <e r="RL"><re>[1-9]00</re><p><l>th</l><r><s n="num"/><s n="ord"/><s n="sg"/></r></p></e>
+  <e r="RL"><re>[1-9]00</re><p><l>th</l><r><s n="num"/><s n="ord"/><s n="pl"/></r></p></e>
+  <e r="LR"><re>[1-9]00</re><p><l>th</l><r><s n="num"/><s n="ord"/></r></p></e>
+
+  <e><re>[0-9]+</re><p><l>s</l><r>s<s n="n"/><s n="pl"/></r></p></e>
+  <e><re>[0-9]+</re><p><l>s</l><r>s<s n="num"/><s n="pl"/></r></p></e>
+
+</pardef>
+
+
+
+<pardef n="months">
+  <e><p><l>January</l><r>January</r></p></e>
+  <e><p><l>February</l><r>February</r></p></e>
+  <e><p><l>March</l><r>March</r></p></e>
+  <e><p><l>April</l><r>April</r></p></e>
+  <e><p><l>May</l><r>May</r></p></e>
+  <e><p><l>June</l><r>June</r></p></e>
+  <e><p><l>July</l><r>July</r></p></e>
+  <e><p><l>August</l><r>August</r></p></e>
+  <e><p><l>September</l><r>September</r></p></e>
+  <e><p><l>October</l><r>October</r></p></e>
+  <e><p><l>November</l><r>November</r></p></e>
+  <e><p><l>December</l><r>December</r></p></e>
+</pardef>
+<pardef n="dates">
+  <e>      <re>[2-3]?[0,4-9]</re><p><l>th<b/></l><r>th<b/></r></p><par n="months"/><p><l/><r><s n="num"/></r></p></e>
+  <e>      <re>1[0-9]</re><p><l>th<b/></l><r>th<b/></r></p><par n="months"/><p><l/><r><s n="num"/></r></p></e>
+  <e>      <re>[2-9]*</re><p><l>1st<b/></l><r>1st<b/></r></p><par n="months"/><p><l/><r><s n="num"/></r></p></e>
+  <e>      <re>[2-9]*</re><p><l>2nd<b/></l><r>2nd<b/></r></p><par n="months"/><p><l/><r><s n="num"/></r></p></e>
+  <e>      <re>[2-9]*</re><p><l>3rd<b/></l><r>3rd<b/></r></p><par n="months"/><p><l/><r><s n="num"/></r></p></e>
+</pardef>
+<pardef n="guionet">
+  <e>      <p>        <l>-</l>        <r>-<s n="guio"/></r></p></e>
+</pardef>
+
+<pardef n="coma">
+  <e>      <p>        <l>,</l>        <r>,<s n="cm"/></r></p></e>
+</pardef>
+
+<pardef n="paresq">
+  <e>      <re>[\(\[]</re>      <p>        <l></l>        <r><s n="lpar"/></r></p></e>
+</pardef>
+
+<pardef n="pardret">
+  <e>      <re>[\)\]]</re>      <p>        <l></l>        <r><s n="rpar"/></r></p></e>
+</pardef>
+<pardef n="persons">      <!-- Ásta Árnadóttir, Ásta Á. Árnadóttir -->
+  <e><re>[A-ZÁÞÐÉÍÓÚÝÖÅ][a-záðéíóúýöå]+ ([A-ZÁÞÐÉÍÓÚÝÖÅ][a-záðéíóúýöå]+|[A-ZÁÞÐÉÍÓÚÝÖÅ])?.? ?[A-ZÁÞÐÉÍÓÚÝÖÅ][a-záðéíóúýöå]+dóttir</re><p><l></l><r></r></p><par n="Mary__np"/></e>
+  <!-- Davíð Oddsson, Davíð D. Oddsson -->
+  <e><re>[A-ZÁÞÐÉÍÓÚÝÖÅ][a-záðéíóúýöå]+ ([A-ZÁÞÐÉÍÓÚÝÖÅ][a-záðéíóúýöå]+|[A-ZÁÞÐÉÍÓÚÝÖÅ])?.? ?[A-ZÁÞÐÉÍÓÚÝÖÅ][a-záðéíóúýöå]+sson</re><p><l></l><r></r></p><par n="Mark__np"/></e>
+  <e><re>[A-ZÁÞÐÉÍÓÚÝÖÅ][a-záðéíóúýöå]+ ([A-ZÁÞÐÉÍÓÚÝÖÅ][a-záðéíóúýöå]+|[A-ZÁÞÐÉÍÓÚÝÖÅ])?.? ?[A-ZÁÞÐÉÍÓÚÝÖÅ][a-záðéíóúýöå]+sen</re><p><l></l><r></r></p><par n="Mark__np"/></e>
+</pardef>
+<pardef n="emails">
+  <e>      <re>[a-z.]+@[a-z.]+</re>      <p>        <l></l>        <r><s n="num"/></r></p></e>
+</pardef>
+
+<pardef n="urls">
+  <e>      <re>((www.)[a-z\-]+[.][a-z]+)</re>      <p>        <l></l>        <r><s n="num"/></r></p></e>
+</pardef>
+
+<pardef n="organisations">
+  <e><re>[A-ZÁÆÞÐÉÍÓÚÝÖÅ][a-zæáðéíóúýöå]+( [A-ZÆÁÞÐÉÍÓÚÝÖÅ][a-zæáðéíóúýöå]+)?</re><p><l><b/>Ltd.</l><r><b/>Ltd.<s n="np"/><s n="org"/><s n="sp"/></r></p></e>
+</pardef>
+<pardef n="parquote">
+  <e>       <p><l>"</l>        <r>parquote<s n="quot"/></r></p></e>
+  <e r="RL"><p><l>"</l>        <r>parquote<s n="rquot"/></r></p></e>
+  <e r="RL"><p><l>"</l>        <r>parquote<s n="lquot"/></r></p></e>
+</pardef>
+
+</pardefs>
 
   <section id="main" type="standard">
     <!-- SECTION: Conjunctions -->
@@ -29016,4 +29118,22 @@ TODO: aldonu kaj retrejnu la tagger
 
 
   </section>
+    
+    <section id="final" type="inconditional">
+    <e><par n="separa"/></e>
+    <e><par n="numeros"/></e>
+    <e><par n="coma"/></e>
+    <e><par n="cometa"/></e>
+    <e><par n="paresq"/></e>
+    <e><par n="pardret"/></e>
+    <e><par n="persons"/></e>
+    <e><par n="organisations"/></e>
+    <e><par n="separ"/></e>
+    <e><par n="guionet"/></e>
+    <e><par n="dates"/></e>
+    <e><par n="emails"/></e>
+    <e><par n="urls"/></e>
+	<e lm="parqupte"><i></i><par n="parquote"/></e>
+
+</section>
 </dictionary>
