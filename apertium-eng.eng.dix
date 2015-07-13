@@ -294,12 +294,12 @@
   <e>       <p><l>being</l>     <r>be<s n="vbser"/></r></p><par n="S__being/"/></e>
   <e>       <p><l>been</l>      <r>be<s n="vbser"/><s n="pp"/></r></p></e>
   <e>       <p><l>be</l>        <r>be<s n="vbser"/><s n="imp"/></r></p></e>
-</pardef>
+</pardef> 
 
 <pardef n="accept__vblex">
   <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="prs"/></r></p></e>
   <e>       <p><l>ed</l>        <r><s n="vblex"/></r></p><par n="S__accepted/"/></e>
   <e>       <p><l>ing</l>       <r><s n="vblex"/></r></p><par n="S__being/"/></e>
