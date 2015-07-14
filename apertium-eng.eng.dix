@@ -679,7 +679,7 @@
   <e>       <p><l>ese</l>       <r>is<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 </pardef>
 
-<pardef n="th/at__prn___mergeTODO">
+<pardef n="th/at__prn">
   <e>       <p><l>at</l>        <r>at<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
   <e>       <p><l>ose</l>       <r>at<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 </pardef>
@@ -2254,6 +2254,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l><b/>those</l> <r><j/>that<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 </pardef>
 
+<pardef n="that__prn">
+  <e>       <p><l></l>          <r><s n="prn"/><s n="sg"/></r></p></e>
+</pardef> 
+
 
 <pardef n="probj_dem__prn">
   <e>       <i></i></e>
@@ -2769,6 +2773,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardefs>
 
   <section id="main" type="standard">
+
+    <!-- GENATIVE S  - temp as noun -->
+<e lm="s">             <i>s</i><par n="house__n"/></e>    
+
     <!-- SECTION: Conjunctions -->
 
 <e lm="and">             <i>and</i><par n="and__cnjcoo"/></e>
@@ -18523,6 +18531,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Niza">            <i>Niza</i><par n="Mary__np"/></e>
 <e lm="no">              <i>no</i><par n="maybe__adv"/></e>
 <e lm="no" c="he got a 'no'"><par n="TAGGER_TODO"/><i>no</i><par n="east__n"/></e>
+<e lm="no good">         <i>no<b/>good</i><par n="house__n"/></e>
 <e lm="no sooner">       <i>no<b/>sooner</i><par n="maybe__adv"/></e>
 <e lm="Noa">             <i>Noa</i><par n="Mary__np"/></e>
 <e lm="Noah">            <i>Noah</i><par n="Mark__np"/></e>
@@ -23404,6 +23413,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Shunko">          <i>Shunko</i><par n="Mark__np"/></e>
 <e lm="shut">            <i>shut</i><par n="cut__vblex"/></e>
 <e lm="shut down">       <i>shut</i><par n="cut__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>down</l><r><g><b/>down</g></r></p></e>
+<e lm="shut up">         <i>shut<b/>up</i><par n="cut__vblex"/></e>
 <e lm="shutoff">         <i>shutoff</i><par n="up__n"/></e>
 <e lm="shutter">         <i>shutter</i><par n="vow__vblex"/></e>
 <e lm="shutter">         <i>shutter</i><par n="house__n"/></e>
@@ -28376,6 +28386,7 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="unless">          <i>unless</i><par n="after__cnjadv"/></e>
 <e lm="until">           <i>until</i><par n="after__cnjadv"/></e>
 <e lm="when">            <i>when</i><par n="after__cnjadv"/></e>
+<e lm="whenever">        <i>whenever</i><par n="after__cnjadv"/></e>
 <e lm="whereas">         <i>whereas</i><par n="after__cnjadv"/></e>
 <e lm="whether">         <i>whether</i><par n="after__cnjadv"/></e>
 <e lm="while">           <i>while</i><par n="after__cnjadv"/></e>
