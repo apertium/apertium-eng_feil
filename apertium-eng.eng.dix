@@ -21088,6 +21088,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="quash">           <i>quash</i><par n="mix__vblex"/></e>
 <e lm="Quebec">          <i>Quebec</i><par n="Barcelona__np"/></e>
 <e lm="queen">           <i>queen</i><par n="house__n"/></e>
+<e lm="queer">           <i>queer</i><par n="long/__adj"/></e>
 <e lm="Queila">          <i>Queila</i><par n="Mary__np"/></e>
 <e lm="quell">           <i>quell</i><par n="accept__vblex"/></e>
 <e lm="Quentin">         <i>Quentin</i><par n="Mark__np"/></e>
@@ -24391,6 +24392,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="stingy">          <i>stingy</i><par n="expensive__adj"/></e>
 <e lm="stink">           <i>stink</i><par n="house__n"/></e>
 <e lm="stink">           <i>stink</i><par n="accept__vblex"/></e>
+<e lm="stinking">        <i>stinking</i><par n="expensive__adj"/></e>
 <e lm="stint">           <i>stint</i><par n="up__n"/></e>
 <e lm="stipend">         <i>stipend</i><par n="up__n"/></e>
 <e lm="stipulate">       <i>stipulat</i><par n="liv/e__vblex"/></e>
@@ -26818,6 +26820,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="verve">           <i>verve</i><par n="up__n"/></e>
 <e lm="very">            <i>very</i><par n="maybe__adv"/></e>
 <e lm="very much">       <i>very<b/>much</i><par n="maybe__adv"/></e>
+<e lm="very well">       <i>very<b/>well</i><par n="maybe__adv"/></e>
 <e lm="Verónica">        <i>Verónica</i><par n="Mary__np"/></e>
 <e lm="vesicle">         <i>vesicle</i><par n="house__n"/></e>
 <e lm="Vesna">           <i>Vesna</i><par n="Mary__np"/></e>
