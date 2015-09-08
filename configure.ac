@@ -1,7 +1,7 @@
 AC_PREREQ(2.52)
 
 AC_INIT([apertium-eng], [0.1.0], [unhammer@fsfe.org])
-AM_INIT_AUTOMAKE([apertium-eng], [0.1.0], no-define)
+AM_INIT_AUTOMAKE(no-define)
 AC_PROG_LN_S
 AC_PROG_AWK
 
