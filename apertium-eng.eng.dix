@@ -2629,6 +2629,12 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e r="LR"><p><l>s</l>         <r><s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 
+<pardef n="buffalo__n">
+  <e>       <p><l></l>          <r><s n="n"/><s n="sg"/></r></p></e>
+  <e>       <p><l>s</l>        <r><s n="n"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>es</l>         <r><s n="n"/><s n="pl"/></r></p></e>
+</pardef>
+
 
 <pardef n="stri/fe__n">
   <e>       <p><l>fes</l>       <r>fe<s n="n"/><s n="pl"/></r></p></e>
@@ -13078,6 +13084,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="hallucination">   <i>hallucination</i><par n="house__n"/></e>
 <e lm="hallway">         <i>hallway</i><par n="up__n"/></e>
 <e lm="halo">            <i>halo</i><par n="zero__n"/></e>
+<e lm="buffalo">         <i>buffalo</i><par n="buffalo__n"/></e>
 <e lm="Halon">           <i>Halon</i><par n="Mary__np"/></e>
 <e lm="Halsdorf">        <i>Halsdorf</i><par n="Smith__np"/></e>
 <e lm="halt">            <i>halt</i><par n="up__n"/></e>
