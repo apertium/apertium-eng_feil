@@ -15,6 +15,7 @@
     <sdef n="pr"    c="Preposition"/> 
     <sdef n="np"    c="Proper name"/> 
     <sdef n="vblex"     c="Verb"/> 
+    <sdef n="guess"     c="Guessed"/> 
     <sdef n="vaux"  c="Auxiliary verb"/> 
     <sdef n="vbmod"     c="Modal verb"/> 
     <sdef n="vbser"     c="Verb 'to be'"/> 
@@ -29139,7 +29140,41 @@ TODO: aldonu kaj retrejnu la tagger
 
 
   </section>
-    
+
+<!--
+  <section id="guesser" type="standard">
+
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+[bcdfghjklmnpqrstvwxz]</re><par n="accept__vblex"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+[bcdfghjklmnpqrstvwxz]</re><par n="liv/e__vblex"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+[bcdfghjklmnpqrstvwxz]</re><par n="di/e__vblex"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+[bcdfghjklmnpqrstvwxz]</re><par n="vow__vblex"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="approach__vblex"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="appl/y__vblex"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+[bcdfghjklmnpqrstvwxz]</re><par n="mix__vblex"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+[bcdfghjklmnpqrstvwxz]</re><par n="step__vblex"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+[bcdfghjklmnpqrstvwxz]</re><par n="control__vblex"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+[aeiou]</re><par n="authori/se__vblex"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="expensive__adj"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="long/__adj"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="happ/y__adj"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="nice/__adj"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="common/__adj"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="handsome/__adj"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="mine__adj"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="lovel/y__adj"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="hot/__adj"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="sh/y__adj"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="house__n"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="up__n"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="bab/y__n"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="access__n"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="fr/y__n"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="east__n"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="politics__n"/><p><l></l><r><s n="guess"/></r></p></e>
+<e lm="guess" r="LR"><re>[A-Za-z][A-Za-z][A-Za-z]+</re><par n="personnel__n"/><p><l></l><r><s n="guess"/></r></p></e>
+
+  </section>
+-->    
     <section id="final" type="inconditional">
     <e><par n="separa"/></e>
     <e><par n="numeros"/></e>
