@@ -2944,6 +2944,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="use">             <i>use</i><par n="house__n"/></e>
 <e lm="peninsula">       <i>peninsula</i><par n="house__n"/></e>
 <e lm="sea">             <i>sea</i><par n="house__n"/></e>
+<e lm="whelk">           <i>whelk</i><par n="house__n"/></e>
 
 <e lm="church">          <i>church</i><par n="church__n"/></e>
 <e lm="march">           <i>march</i><par n="church__n"/></e>
@@ -2962,6 +2963,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="chaos">           <i>chaos</i><par n="chaos__n"/></e>
 <e lm="peace">           <i>peace</i><par n="chaos__n"/></e>
 <e lm="independence">    <i>independence</i><par n="chaos__n"/></e>
+
+
 
     <!-- SECTION: Proper nouns -->
 
