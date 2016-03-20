@@ -16496,6 +16496,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="loiter">          <i>loiter</i><par n="accept__vblex"/></e>
 <e lm="Lola">            <i>Lola</i><par n="Mary__np"/></e>
 <e lm="London">          <i>London</i><par n="Barcelona__np"/></e>
+<e lm="Helsinki">        <i>Helsinki</i><par n="Barcelona__np"/></e>
 <e lm="London">          <i>London</i><par n="Mark__np"/></e>
 <e lm="London">          <i>London</i><par n="Mary__np"/></e>
 <!-- XXX TODO Provu cxu en ordo -->
