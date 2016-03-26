@@ -2771,7 +2771,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <pardef n="parquote">
   <e>       <p><l>"</l>        <r>parquote<s n="quot"/></r></p></e>
   <e r="RL"><p><l>"</l>        <r>parquote<s n="rquot"/></r></p></e>
+  <e r="RL"><p><l>”</l>        <r>”<s n="rquot"/></r></p></e>
   <e r="RL"><p><l>"</l>        <r>parquote<s n="lquot"/></r></p></e>
+  <e r="RL"><p><l>“</l>        <r>“<s n="lquot"/></r></p></e>
 </pardef>
 
 </pardefs>
