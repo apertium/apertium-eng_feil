@@ -6254,6 +6254,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="buffet">          <i>buffet</i><par n="house__n"/></e>
 <e lm="buffetting">      <i>buffetting</i><par n="up__n"/></e>
 <e lm="bug">             <i>bug</i><par n="house__n"/></e>
+<e lm="bugbear">         <i>bugbear</i><par n="house__n"/></e>
 <e lm="build">           <i>buil</i><par n="ben/d__vblex"/></e>
 <e lm="build">           <i>build</i><par n="house__n"/></e>
 <e lm="builder">         <i>builder</i><par n="house__n"/></e>
@@ -25929,6 +25930,13 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Triana">          <i>Triana</i><par n="Mary__np"/></e>
 <e lm="triangle">        <i>triangle</i><par n="house__n"/></e>
 <e lm="triangular">      <i>triangular</i><par n="expensive__adj"/></e>
+
+
+<e lm="turd">        <i>turd</i><par n="house__n"/></e>
+
+
+
+
 <e lm="triangulation">   <i>triangulation</i><par n="house__n"/></e>
 <e lm="tribal">          <i>tribal</i><par n="expensive__adj"/></e>
 <e lm="tribe">           <i>tribe</i><par n="house__n"/></e>
