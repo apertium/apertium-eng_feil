@@ -27946,6 +27946,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="who">             <i>who</i><par n="what__prn"/></e>
 <e lm="whose">           <i>whose</i><par n="what__prn"/></e>
 
+<e lm="nothing at all">  <i>nothing<b/>at<b/>all</i><par n="everyone__prn"/></e>
+
     <!-- ******************************
           group prn_symbol
       ****************************** -->
