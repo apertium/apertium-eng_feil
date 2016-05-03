@@ -5784,6 +5784,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="blaze">           <i>blaz</i><par n="liv/e__vblex"/></e>
 <e lm="blaze">           <i>blaze</i><par n="up__n"/></e>
 <e lm="Blaze">           <i>Blaze</i><par n="Mark__np"/></e>
+<e lm="blazing">         <i>blazing</i><par n="expensive__adj"/></e>
 <e lm="bleed">           <i>ble</i><par n="ble/ed__vblex"/></e>
 <e lm="bleach">          <i>bleach</i><par n="access__n"/></e>
 <e lm="bleach">          <i>bleach</i><par n="approach__vblex"/></e>
@@ -13591,6 +13592,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="hologram">        <i>hologram</i><par n="house__n"/></e>
 <e lm="holography">      <i>holograph</i><par n="bab/y__n"/></e>
 <e lm="holster">         <i>holster</i><par n="house__n"/></e>
+<e lm="Holyrood">        <i>Holyrood</i><par n="Barcelona__np"/></e>
 <e lm="homage">          <i>homage</i><par n="house__n"/></e>
 <e lm="home">            <i>home</i><par n="house__n"/></e>
 <e lm="home">            <i>home</i><par n="maybe__adv"/></e>
