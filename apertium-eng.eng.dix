@@ -13598,6 +13598,9 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="homage">          <i>homage</i><par n="house__n"/></e>
 <e lm="home">            <i>home</i><par n="house__n"/></e>
 <e lm="home">            <i>home</i><par n="maybe__adv"/></e>
+<e lm="at home">         <i>at<b/>home</i><par n="maybe__adv"/></e>
+<e lm="last autumn" r="RL"><i>last<b/>autumn</i><par n="maybe__adv"/></e>
+<e lm="last year" r="RL"><i>last<b/>year</i><par n="maybe__adv"/></e>
 <e lm="home-made">       <i>home-made</i><par n="expensive__adj"/></e>
 <e lm="homeland">        <i>homeland</i><par n="house__n"/></e>
 <!-- XXX TODO Provu cxu en ordo
@@ -28470,6 +28473,9 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="">                <i>all<b/>that<b/>glitters<b/>is<b/>not<b/>gold</i><par n="hello__ij"/></e>
 <e lm="">                <i>all<b/>work<b/>and<b/>no<b/>play<b/>makes<b/>Jack<b/>a<b/>dull<b/>boy</i><par n="hello__ij"/></e>
 <e lm="congrats">        <i>congrats</i><par n="hello__ij"/></e>
+<e lm="yes">             <i>yes</i><par n="hello__ij"/></e>
+<e lm="yeah">             <i>yeah</i><par n="hello__ij"/></e>
+<e lm="no">              <i>no</i><par n="hello__ij"/></e>
 <e lm="congratulations"> <i>congratulations</i><par n="hello__ij"/></e>
 <e lm="good day">        <i>good<b/>day</i><par n="hello__ij"/></e>
 <e lm="good morning">    <i>good<b/>morning</i><par n="hello__ij"/></e>
