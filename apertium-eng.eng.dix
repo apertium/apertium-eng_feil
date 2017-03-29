@@ -4839,6 +4839,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="assure">          <i>assur</i><par n="di/e__vblex"/></e>
 <e lm="assurance">       <i>assurance</i><par n="house__n"/></e>
 <e lm="assured">         <i>assured</i><par n="expensive__adj"/></e>
+<e lm="assuredly">       <i>assuredly</i><par n="maybe__adv"/></e>
 <e lm="asterisk">        <i>asterisk</i><par n="house__n"/></e>
 <e lm="asteroid">        <i>asteroid</i><par n="house__n"/></e>
 <e lm="asthma">          <i>asthma</i><par n="house__n"/></e>
@@ -19001,6 +19002,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="on the other hand"><i>on<b/>the<b/>other<b/>hand</i><par n="maybe__adv"/></e>
 <e lm="on the other side"><i>on<b/>the<b/>other<b/>side</i><par n="maybe__adv"/></e>
 <e lm="on the right">    <i>on<b/>the<b/>right</i><par n="maybe__adv"/></e>
+<e lm="on the road">     <i>on<b/>the<b/>road</i><par n="maybe__adv"/></e>
 <e lm="on the quiet">    <i>on<b/>the<b/>quiet</i><par n="maybe__adv"/></e>
 <e lm="on their behalf"> <i>on<b/>their<b/>behalf</i><par n="maybe__adv"/></e>
 <e lm="on Thursday">     <i>on<b/>Thursday</i><par n="maybe__adv"/></e>
@@ -25997,6 +25999,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="triumphant">      <i>triumphant</i><par n="expensive__adj"/></e>
 <e lm="trivial">         <i>trivial</i><par n="expensive__adj"/></e>
 <e lm="trivialize">      <i>trivializ</i><par n="di/e__vblex"/></e>
+<e lm="troll">           <i>troll</i><par n="house__n"/></e>
 <e lm="trolley">         <i>trolle</i><par n="fr/y__n"/></e>
 <e lm="trombone">        <i>trombone</i><par n="house__n"/></e>
 <e lm="Tromen">          <i>Tromen</i><par n="Mark__np"/></e>
