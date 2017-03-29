@@ -14217,6 +14217,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="incompetence">    <i>incompetence</i><par n="house__n"/></e>
 <e lm="incompetent">     <i>incompetent</i><par n="expensive__adj"/></e>
 <e lm="incomplete">      <i>incomplete</i><par n="expensive__adj"/></e>
+<e lm="incomplete rainbow"><i>incomplete<b/>rainbow</i><par n="house__n"/></e>
 <e lm="incomprehensible"><i>incomprehensible</i><par n="ii__adv"/></e>
 <e lm="incomprehensible"><i>incomprehensible</i><par n="expensive__adj"/></e>
 <e lm="inconceivable">   <i>inconceivable</i><par n="expensive__adj"/></e>
@@ -25701,6 +25702,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="topping">         <i>topping</i><par n="house__n"/></e>
 <e lm="topple">          <i>toppl</i><par n="di/e__vblex"/></e>
 <e lm="topsoil">         <i>topsoil</i><par n="up__n"/></e>
+<e lm="topsy-turvy">     <i>topsy-turvy</i><par n="expensive__adj"/></e>
 <e lm="tory">            <i>tor</i><par n="fr/y__n"/></e>
 <e lm="torch">           <i>torch</i><par n="access__n"/></e>
 <e lm="torch">           <i>torch</i><par n="mix__vblex"/></e>
