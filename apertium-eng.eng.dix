@@ -17479,6 +17479,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="metronome">       <i>metronome</i><par n="house__n"/></e>
 <e lm="metropolis">      <i>metropol</i><par n="analys/is__n"/></e>
 <e lm="metropolitan">    <i>metropolitan</i><par n="expensive__adj"/></e>
+<e lm="mettle">          <i>mettle</i><par n="house__n"/></e>
 <e lm="Mexican">         <i>Mexican</i><par n="house__n"/></e>
 <e lm="Mexican">         <i>Mexican</i><par n="expensive__adj"/></e>
 <e lm="Mexico">          <i>Mexico</i><par n="Barcelona__np"/></e>
@@ -24517,6 +24518,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="stream">          <i>stream</i><par n="accept__vblex"/></e>
 <e lm="streamline">      <i>streamlin</i><par n="di/e__vblex"/></e>
 <e lm="streamlined">     <i>streamlined</i><par n="expensive__adj"/></e>
+<e lm="street fight">    <i>street<b/>fight</i><par n="house__n"/></e>
 <e lm="street">          <i>street</i><par n="house__n"/></e>
 <e lm="streetcar">       <i>streetcar</i><par n="house__n"/></e>
 <e lm="strength">        <i>strength</i><par n="house__n"/></e>
