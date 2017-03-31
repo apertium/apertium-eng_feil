@@ -376,6 +376,9 @@
 <pardef n="'s__gen">
   <e>       <p><l></l>          <r><s n="gen"/></r></p></e>
 </pardef>
+<pardef n="’s__gen">
+  <e>       <p><l></l>          <r><s n="gen"/></r></p></e>
+</pardef>
 
 
 
@@ -3112,7 +3115,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="be hungry">       <i></i><par n="/be__vblex"/><p><l><b/>hungry</l><r><g><b/>hungry</g></r></p></e>
 
 <e lm="'s">              <i>'s</i><par n="'s__gen"/></e>
-
+<e lm="’s">              <i>’s</i><par n="’s__gen"/></e>
 
 <e lm="a bit">           <i>a<b/>bit</i><par n="maybe__adv"/></e>
 <e lm="a little bit">    <i>a<b/>little<b/>bit</i><par n="maybe__adv"/></e>
@@ -3896,6 +3899,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Aliza">           <i>Aliza</i><par n="Mary__np"/></e>
 <e lm="Alize">           <i>Alize</i><par n="Mary__np"/></e>
 <e lm="Alkos">           <i>Alkos</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="all">             <i>all</i><par n="maybe__adv"/></e>
 <e lm="ally">            <i>all</i><par n="bab/y__n"/></e>
 <e lm="ally">            <i>all</i><par n="appl/y__vblex"/></e>
 <e lm="all along">       <i>all<b/>along</i><par n="maybe__adv"/></e>
@@ -13583,6 +13587,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="hoisting">        <i>hoisting</i><par n="up__n"/></e>
 <e lm="holy">            <i>hol</i><par n="happ/y__adj"/></e>
 <e lm="hold">            <i>hold</i><par n="house__n"/></e>
+<e lm="hold">            <i>hold</i><par n="accept__vblex"/></e>
 <e lm="Holden">          <i>Holden</i><par n="Mark__np"/></e>
 <e lm="holder">          <i>holder</i><par n="house__n"/></e>
 <e lm="holding">         <i>holding</i><par n="house__n"/></e>
@@ -22655,6 +22660,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="salon">           <i>salon</i><par n="up__n"/></e>
 <e lm="salt">            <i>salt</i><par n="house__n"/></e>
 <e lm="salt">            <i>salt</i><par n="accept__vblex"/></e>
+<e lm="saltire">         <i>saltire</i><par n="house__n"/></e>
 <e lm="salty">           <i>salt</i><par n="sh/y__adj"/></e>
 <e lm="salubrious">      <i>salubrious</i><par n="expensive__adj"/></e>
 <e lm="Salustia">        <i>Salustia</i><par n="Mary__np"/></e>
@@ -24190,6 +24196,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="sprightly">       <i>sprightly</i><par n="expensive__adj"/></e>
 <e lm="spring">          <i>spring</i><par n="house__n"/></e>
 <e lm="springboard">     <i>springboard</i><par n="house__n"/></e>
+<e lm="springtime">      <i>springtime</i><par n="house__n"/></e>
 <e lm="sprinkle">        <i>sprinkl</i><par n="liv/e__vblex"/></e>
 <e lm="sprinkler">       <i>sprinkler</i><par n="house__n"/></e>
 <e lm="sprint">          <i>sprint</i><par n="accept__vblex"/></e>
