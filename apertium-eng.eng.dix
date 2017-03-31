@@ -28087,6 +28087,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 
 
 <e lm="one">             <i>one</i><par n="one__num"/></e>
+<e lm="five">            <i>five</i><par n="two__num"/></e>
 <e lm="seven">           <i>seven</i><par n="two__num"/></e>
 <e lm="seventeen">       <i>seventeen</i><par n="two__num"/></e>
 <e lm="seventy">         <i>seventy</i><par n="twenty__num"/></e>
