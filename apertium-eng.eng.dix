@@ -9578,6 +9578,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="disgusting">      <i>disgusting</i><par n="expensive__adj"/></e>
 <e lm="dish">            <i>dish</i><par n="access__n"/></e>
 <e lm="disheartening">   <i>disheartening</i><par n="ii__adv"/></e>
+<e lm="disheartening">   <i>disheartening</i><par n="expensive__adj"/></e>
 <e lm="dishonest">       <i>dishonest</i><par n="expensive__adj"/></e>
 <e lm="dishonesty">      <i>dishonest</i><par n="bab/y__n"/></e>
 <e lm="dishonour">       <i>dishon</i><par n="ou"/><i>r</i><par n="house__n"/></e>
@@ -28382,6 +28383,7 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="thanks to">       <i>thanks<b/>to</i><par n="at__pr"/></e>
 <e lm="through">         <i>through</i><par n="at__pr"/></e>
 <!--    <e lm="throughout"><i>throughout</i><par n="maybe__adv"/></e> -->
+<e lm="till">            <i>till</i><par n="at__pr"/></e>
 <e lm="throughout">      <i>throughout</i><par n="at__pr"/></e>
 <e lm="to">              <i>to</i><par n="at__pr"/></e>
 <e lm="together with">   <i>together<b/>with</i><par n="at__pr"/></e>
