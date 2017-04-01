@@ -25533,6 +25533,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="thug">            <i>thug</i><par n="up__n"/></e>
 <e lm="thumb">           <i>thumb</i><par n="house__n"/></e>
 <e lm="thumbtack">       <i>thumbtack</i><par n="house__n"/></e>
+<e lm="thump">           <i>thump</i><par n="accept__vblex"/></e>
 <e lm="thunder">         <i>thunder</i><par n="house__n"/></e>
 <e lm="thunder">         <i>thunder</i><par n="accept__vblex"/></e>
 <e lm="thunderstorm">    <i>thunderstorm</i><par n="up__n"/></e>
