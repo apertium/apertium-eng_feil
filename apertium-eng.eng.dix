@@ -28463,7 +28463,7 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="i.e.">            <i>i.e.</i><par n="after__cnjadv"/></e>
 <e lm="e.g.">            <i>e.g.</i><par n="after__cnjadv"/></e>
 <e lm="and also">        <i>and<b/>also</i><par n="and__cnjcoo"/></e>
-<!-- removed, as too much bacame <adv>, see  http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests.
+<!-- removed, as too much bacame <adv>, see  https://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests.
 <e lm="but"><i>but</i><par n="at__pr"/></e>
 <e lm="but">             <i>but</i><par n="maybe__adv"/></e>
     -->
